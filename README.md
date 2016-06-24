@@ -21,11 +21,11 @@ git clone https://github.com/hermsicodes/awesome-logrotate.git
       AGE=DESIRED # DAYS
     ```
 
-3. Afterwards, change directory, run logrotate.sh and use STDIN to specify the logfile you want to rotate:
+3. Afterwards, change directory, run logrotate.sh and use STDIN to specify the logfile you want to rotate. Please use absolute paths here:
 
     ```bash
 cd awesome-logrotate
-./logrotate.sh PATH/TO/FILE.log
+./logrotate.sh /PATH/TO/FILE.log
 ```
 
 4. Have fun with your rotated logfile. You can also schedule this script via crontab or cronjob in general. Simply copy the command above and insert it.
